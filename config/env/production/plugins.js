@@ -1,3 +1,5 @@
+const { NodeHttpHandler } = require("@aws-sdk/node-http-handler");
+
 module.exports = ({ env }) => ({
     upload: {
     config: {
@@ -16,6 +18,10 @@ module.exports = ({ env }) => ({
             signedUrlExpires: env("AWS_SIGNED_URL_EXPIRES", 15 * 60),
             Bucket: env("AWS_BUCKET"),
           },
+          requestHandler: new NodeHttpHandler({
+            connectionTimeout: 300000, // 5 minutes
+            socketTimeout: 300000, // 5 minutes
+          }),
         },
       },
       actionOptions: {
