@@ -1,8 +1,10 @@
 {
   "collectionName": "components_shared_seos",
   "info": {
-    "displayName": "seo",
-    "icon": "search"
+    "name": "Seo",
+    "icon": "allergies",
+    "displayName": "Seo",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,24 +16,11 @@
       "type": "text",
       "required": true
     },
-    "openGraph": {
-      "type": "component",
-      "component": "shared.open-graph",
-      "repeatable": false
-    },
-    "keywords": {
-      "type": "text",
-      "regex": "[^,]+"
-    },
-    "metaRobots": {
-      "type": "string",
-      "regex": "[^,]+"
-    },
-    "canonicalURL": {
-      "type": "string"
-    },
-    "structuredData": {
-      "type": "json"
+    "shareImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
     }
   }
 }
