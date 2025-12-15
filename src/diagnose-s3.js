@@ -23,12 +23,18 @@ async function diagnose() {
   console.log(`Region: ${process.env.AWS_REGION}`);
   console.log(`Bucket: ${process.env.AWS_BUCKET}`);
 
+const { NodeHttpHandler } = require("@aws-sdk/node-http-handler");
+
   const s3Client = new S3Client({
     region: process.env.AWS_REGION,
     credentials: {
       accessKeyId: process.env.AWS_ACCESS_KEY_ID,
       secretAccessKey: process.env.AWS_ACCESS_SECRET,
     },
+    requestHandler: new NodeHttpHandler({
+      connectionTimeout: 300000, // 5 minutes
+      socketTimeout: 300000, // 5 minutes
+    }),
   });
 
   try {
@@ -73,3 +79,7 @@ async function diagnose() {
 }
 
 module.exports = diagnose;
+
+if (require.main === module) {
+    diagnose();
+}
