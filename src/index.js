@@ -2,6 +2,8 @@
 const bootstrap = require("./bootstrap");
 const diagnose = require("./diagnose-s3");
 
+const migrateMedia = require("./migrate-media-to-s3");
+
 module.exports = {
   /**
    * An asynchronous register function that runs before
@@ -19,12 +21,14 @@ module.exports = {
    * run jobs, or perform some special logic.
    */
   async bootstrap({ strapi }) {
-    await bootstrap();
+    /* await bootstrap();
     try {
         await diagnose();
     } catch (error) {
         strapi.log.error('S3 Diagnostic failed:', error);
-    }
+    } */
+   
+    await migrateMedia({ strapi });
   },
 
 };
