@@ -1,0 +1,109 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_sales_pages",
+  "info": {
+    "singularName": "contact-sales-page",
+    "pluralName": "contact-sales-pages",
+    "displayName": "Contact Sales Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "header": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.header-section",
+      "repeatable": false,
+      "required": true
+    },
+    "team": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.team",
+      "repeatable": false
+    },
+    "statistic": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.number",
+      "repeatable": false
+    },
+    "graphs": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "chart.chart",
+      "repeatable": false
+    },
+    "form": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.form",
+      "repeatable": false
+    },
+    "related_content": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::related-content.related-content"
+    },
+    "seo": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo",
+      "repeatable": false
+    },
+    "include_sitemap": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true,
+      "default": true
+    },
+    "bottom_panel": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bottom-panel.bottom-panel"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sub_sections_our_products",
+  "info": {
+    "displayName": "Our Product",
+    "icon": "lightbulb"
+  },
+  "options": {},
+  "attributes": {
+    "summary": {
+      "type": "text"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "btn": {
+      "type": "component",
+      "component": "shared.link-btn",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

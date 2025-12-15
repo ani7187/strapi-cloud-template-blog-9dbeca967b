@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sub_sections_key_features",
+  "info": {
+    "displayName": "Key Feature",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "key_feature": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::key-feature.key-feature"
+    },
+    "btn": {
+      "type": "component",
+      "component": "shared.link-btn",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

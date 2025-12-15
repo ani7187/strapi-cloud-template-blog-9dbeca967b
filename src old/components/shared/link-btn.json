@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_shared_link_btns",
+  "info": {
+    "displayName": "Link btn",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "seo_title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "required": false
+    },
+    "isExternal": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "popup_type": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "about_business",
+        "book_meeting",
+        "book_meeting_simple"
+      ]
+    },
+    "inner_page": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    },
+    "scroll_section": {
+      "type": "string"
+    },
+    "info": {
+      "type": "string",
+      "private": true,
+      "default": "Fill only one of the fields below: URL(external or internal), Inner Page, Scroll Section, Popup Type, or the combination of Inner Page + Scroll Section."
+    }
+  },
+  "config": {}
+}

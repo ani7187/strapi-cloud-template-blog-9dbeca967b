@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_licences_certifications_certifications",
+  "info": {
+    "displayName": "Certification",
+    "icon": "filePdf"
+  },
+  "options": {},
+  "attributes": {
+    "certificate_number": {
+      "type": "string",
+      "required": true
+    },
+    "certified_product_list": {
+      "type": "component",
+      "component": "licences-certifications.certified-product",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

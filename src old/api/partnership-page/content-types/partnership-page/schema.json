@@ -1,0 +1,189 @@
+{
+  "kind": "singleType",
+  "collectionName": "partnership_pages",
+  "info": {
+    "singularName": "partnership-page",
+    "pluralName": "partnership-pages",
+    "displayName": "Partnership page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "header": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.header-section",
+      "repeatable": false,
+      "required": true
+    },
+    "short_description": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.short-description",
+      "repeatable": false
+    },
+    "more_than_support": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.item-list",
+      "repeatable": false
+    },
+    "partner_benefits": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.item-list",
+      "repeatable": false
+    },
+    "sport_success": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.item-list",
+      "repeatable": false
+    },
+    "scalable_success": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.item-list",
+      "repeatable": false
+    },
+    "real_results": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.event-features",
+      "repeatable": false
+    },
+    "provider_short_description": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.short-description",
+      "repeatable": false
+    },
+    "client_reviews": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.client-review",
+      "repeatable": false
+    },
+    "success_story": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.success-story",
+      "repeatable": false
+    },
+    "statistic": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.number",
+      "repeatable": false
+    },
+    "banner": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.banner",
+      "repeatable": false
+    },
+    "related_content": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::related-content.related-content"
+    },
+    "bottom_panel": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bottom-panel.bottom-panel"
+    },
+    "map": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.interactive-map",
+      "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo",
+      "repeatable": false
+    },
+    "include_sitemap": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": true,
+      "default": true
+    }
+  }
+}

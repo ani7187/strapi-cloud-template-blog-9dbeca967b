@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "related_contents",
+  "info": {
+    "singularName": "related-content",
+    "pluralName": "related-contents",
+    "displayName": "RelatedContent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "unique_title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    },
+    "blog_posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-post.blog-post"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "related_content"
+    },
+    "success_stories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::success-story.success-story"
+    },
+    "solutions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::solution.solution",
+      "mappedBy": "related_content"
+    },
+    "expos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::expo.expo"
+    },
+    "single_types": {
+      "type": "component",
+      "component": "shared.item-with-btn",
+      "repeatable": true
+    }
+  }
+}

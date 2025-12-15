@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sub_sections_product_solutions",
+  "info": {
+    "displayName": "Product solution",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "product_solutions": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product-solution.product-solution"
+    },
+    "btn": {
+      "type": "component",
+      "component": "shared.link-btn",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

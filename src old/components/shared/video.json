@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_videos",
+  "info": {
+    "displayName": "Video",
+    "icon": "television"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

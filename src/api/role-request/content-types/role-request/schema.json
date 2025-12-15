@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "role_requests",
+  "info": {
+    "singularName": "role-request",
+    "pluralName": "role-requests",
+    "displayName": "Role request"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "resume": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}

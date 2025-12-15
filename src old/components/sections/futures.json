@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_futures",
+  "info": {
+    "displayName": "Features",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "key_feature": {
+      "type": "component",
+      "component": "sub-sections.key-feature",
+      "repeatable": true,
+      "required": false
+    }
+  },
+  "config": {}
+}

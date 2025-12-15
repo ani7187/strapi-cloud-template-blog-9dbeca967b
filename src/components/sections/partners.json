@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_partners",
+  "info": {
+    "displayName": "Partners",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "summary": {
+      "type": "text"
+    },
+    "partners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::partner.partner"
+    }
+  },
+  "config": {}
+}

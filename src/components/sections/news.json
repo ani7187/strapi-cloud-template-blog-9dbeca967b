@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_news",
+  "info": {
+    "displayName": "News",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    }
+  },
+  "config": {}
+}

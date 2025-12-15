@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_sections_numbers_with_btns",
+  "info": {
+    "displayName": "Numbers with btn",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "summary": {
+      "type": "text"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "buttons": {
+      "type": "component",
+      "component": "shared.link-btn",
+      "repeatable": true
+    },
+    "numbers": {
+      "type": "component",
+      "component": "shared.number",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

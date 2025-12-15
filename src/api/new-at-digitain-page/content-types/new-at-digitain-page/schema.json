@@ -1,0 +1,58 @@
+{
+  "kind": "singleType",
+  "collectionName": "new_at_digitain_pages",
+  "info": {
+    "singularName": "new-at-digitain-page",
+    "pluralName": "new-at-digitain-pages",
+    "displayName": "New at Digitain Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "header": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.header-section",
+      "repeatable": false
+    },
+    "related_content": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::related-content.related-content"
+    },
+    "bottom_panel": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bottom-panel.bottom-panel"
+    },
+    "include_sitemap": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": true,
+      "default": true
+    }
+  }
+}

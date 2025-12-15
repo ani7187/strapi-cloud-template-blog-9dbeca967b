@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_licences_certifications_certified_products",
+  "info": {
+    "displayName": "Certified product",
+    "icon": "filePdf"
+  },
+  "options": {},
+  "attributes": {
+    "certified_product": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

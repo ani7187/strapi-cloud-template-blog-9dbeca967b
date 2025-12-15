@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "job_post_pages",
+  "info": {
+    "singularName": "job-post-page",
+    "pluralName": "job-post-pages",
+    "displayName": "Job Post page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "item_list": {
+      "type": "component",
+      "component": "sections.item-list",
+      "repeatable": false
+    },
+    "description": {
+      "type": "component",
+      "component": "sections.description-simple",
+      "repeatable": false
+    },
+    "form": {
+      "type": "component",
+      "component": "sections.form",
+      "repeatable": false
+    },
+    "bottom_panel": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bottom-panel.bottom-panel"
+    }
+  }
+}

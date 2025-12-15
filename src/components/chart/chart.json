@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_charts",
+  "info": {
+    "displayName": "Chart",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "chart": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::chart.chart"
+    }
+  },
+  "config": {}
+}

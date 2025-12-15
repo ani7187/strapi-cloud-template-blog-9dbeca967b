@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_rich_contents",
+  "info": {
+    "displayName": "Rich Content",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "body": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

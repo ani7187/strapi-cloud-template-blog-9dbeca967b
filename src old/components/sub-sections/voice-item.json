@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sub_sections_voice_items",
+  "info": {
+    "displayName": "Voice item",
+    "icon": "hashtag"
+  },
+  "options": {},
+  "attributes": {
+    "summary": {
+      "type": "text"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

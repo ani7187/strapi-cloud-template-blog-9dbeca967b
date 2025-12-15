@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_shared_chart_items",
+  "info": {
+    "displayName": "Chart item",
+    "icon": "chartPie"
+  },
+  "options": {},
+  "attributes": {
+    "horizontal": {
+      "type": "string",
+      "required": true
+    },
+    "vertical": {
+      "type": "string",
+      "required": true
+    },
+    "column_type": {
+      "type": "enumeration",
+      "required": true,
+      "default": "default",
+      "enum": [
+        "default",
+        "before",
+        "after"
+      ]
+    },
+    "extra_breakdown": {
+      "type": "component",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "column_type"
+            },
+            "default"
+          ]
+        }
+      },
+      "component": "chart.extra",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

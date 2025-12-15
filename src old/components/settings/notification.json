@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_settings_notifications",
+  "info": {
+    "displayName": "Notification",
+    "icon": "bell"
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "webhook_url": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "about-business-request",
+        "book-a-meeting-request",
+        "consultation-request",
+        "contact-request",
+        "role-request",
+        "subscribe-request"
+      ]
+    }
+  },
+  "config": {}
+}

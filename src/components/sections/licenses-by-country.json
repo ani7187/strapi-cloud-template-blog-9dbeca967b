@@ -1,0 +1,63 @@
+{
+  "collectionName": "components_sections_licenses_by_countries",
+  "info": {
+    "displayName": "Licenses By Country",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "is_show_popular": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "popular_title": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "is_show_popular"
+            },
+            true
+          ]
+        }
+      },
+      "default": "Popular",
+      "required": true
+    },
+    "is_show_all": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "all_title": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "is_show_all"
+            },
+            true
+          ]
+        }
+      },
+      "default": "All",
+      "required": true
+    },
+    "regions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::region.region"
+    }
+  },
+  "config": {}
+}

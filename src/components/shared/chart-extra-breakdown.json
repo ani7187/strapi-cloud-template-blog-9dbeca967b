@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_chart_extra_breakdowns",
+  "info": {
+    "displayName": "Chart extra breakdown",
+    "icon": "manyToMany"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

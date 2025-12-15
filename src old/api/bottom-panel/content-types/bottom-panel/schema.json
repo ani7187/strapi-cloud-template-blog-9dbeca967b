@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bottom_panels",
+  "info": {
+    "singularName": "bottom-panel",
+    "pluralName": "bottom-panels",
+    "displayName": "Bottom panel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": false,
+      "enum": [
+        "form"
+      ]
+    },
+    "input": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "button": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.link-btn",
+      "repeatable": false
+    }
+  }
+}

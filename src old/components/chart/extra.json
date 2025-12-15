@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_chart_extras",
+  "info": {
+    "displayName": "Extra",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "item": {
+      "type": "component",
+      "component": "chart.extra-item",
+      "repeatable": true,
+      "required": false
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_shared_images",
+  "info": {
+    "displayName": "Images",
+    "icon": "landscape"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "summary": {
+      "type": "text"
+    },
+    "btn": {
+      "type": "component",
+      "component": "shared.link-btn",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

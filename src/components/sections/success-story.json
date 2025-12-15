@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_success_stories",
+  "info": {
+    "displayName": "Success story",
+    "icon": "lightbulb"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "summary": {
+      "type": "text",
+      "required": false
+    },
+    "success_stories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::success-story.success-story"
+    }
+  },
+  "config": {}
+}

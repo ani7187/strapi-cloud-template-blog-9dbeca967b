@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "form_topics",
+  "info": {
+    "singularName": "form-topic",
+    "pluralName": "form-topics",
+    "displayName": "Form topic"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "position": {
+      "type": "biginteger",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "targetField": "title",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_settings_analytics_settings",
+  "info": {
+    "displayName": "Analytics Settings",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "google_tag_manager_id": {
+      "type": "string"
+    },
+    "google_analytics_id": {
+      "type": "string"
+    },
+    "facebook_pixel_id": {
+      "type": "string"
+    },
+    "hotjar_id": {
+      "type": "string"
+    },
+    "custom_scripts_head": {
+      "type": "text"
+    },
+    "custom_scripts_body": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

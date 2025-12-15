@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "person_positions",
+  "info": {
+    "singularName": "person-position",
+    "pluralName": "person-positions",
+    "displayName": "Person tag"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "targetField": "title",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_listings",
+  "info": {
+    "displayName": "Listing"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "summary": {
+      "type": "text"
+    },
+    "btn": {
+      "type": "component",
+      "component": "shared.link-btn",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

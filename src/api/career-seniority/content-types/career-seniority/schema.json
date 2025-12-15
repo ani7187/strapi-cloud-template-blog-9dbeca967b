@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "career_seniorities",
+  "info": {
+    "singularName": "career-seniority",
+    "pluralName": "career-seniorities",
+    "displayName": "Career seniority"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "targetField": "title",
+      "required": true
+    }
+  }
+}
