@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_our_products",
+  "info": {
+    "displayName": "Our Products",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "products": {
+      "type": "component",
+      "component": "sub-sections.our-product",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_client_reviews",
+  "info": {
+    "displayName": "Client review",
+    "icon": "emotionHappy"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "summary": {
+      "type": "text"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscribe_requests",
+  "info": {
+    "singularName": "subscribe-request",
+    "pluralName": "subscribe-requests",
+    "displayName": "Subscribe request"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "subscribe",
+        "gaming_report"
+      ]
+    }
+  }
+}

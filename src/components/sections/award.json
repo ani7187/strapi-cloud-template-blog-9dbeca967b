@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_awards",
+  "info": {
+    "displayName": "Award",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "summary": {
+      "type": "text"
+    },
+    "awards_list": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::award.award"
+    }
+  },
+  "config": {}
+}

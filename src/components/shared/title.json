@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_titles",
+  "info": {
+    "displayName": "Summary text",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

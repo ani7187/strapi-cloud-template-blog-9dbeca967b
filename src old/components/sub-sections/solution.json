@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sub_sections_solutions",
+  "info": {
+    "displayName": "Solution",
+    "icon": "monitor"
+  },
+  "options": {},
+  "attributes": {
+    "solution": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::solution.solution"
+    },
+    "btn": {
+      "type": "component",
+      "component": "shared.link-btn",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

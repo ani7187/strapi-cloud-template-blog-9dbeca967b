@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_product_solutions",
+  "info": {
+    "displayName": "Product solutions",
+    "icon": "magic"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "summary": {
+      "type": "text",
+      "required": false
+    },
+    "product_solution": {
+      "type": "component",
+      "component": "sub-sections.product-solution",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

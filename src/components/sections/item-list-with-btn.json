@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_item_list_with_btns",
+  "info": {
+    "displayName": "Item list with btn",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "summary": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "component": "shared.item-with-btn",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_extended_sections_items",
+  "info": {
+    "displayName": "Item",
+    "icon": "hashtag"
+  },
+  "options": {},
+  "attributes": {
+    "listing_title": {
+      "type": "string"
+    },
+    "listing_summary": {
+      "type": "text"
+    },
+    "listing_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

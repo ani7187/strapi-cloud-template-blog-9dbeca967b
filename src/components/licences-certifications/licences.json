@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_licences_certifications_licences",
+  "info": {
+    "displayName": "License",
+    "icon": "stack"
+  },
+  "options": {},
+  "attributes": {
+    "license_type": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

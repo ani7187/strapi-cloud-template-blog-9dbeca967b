@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_numbers",
+  "info": {
+    "displayName": "Number"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "summary": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

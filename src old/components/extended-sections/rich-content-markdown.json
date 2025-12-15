@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_extended_sections_rich_content_markdown_s",
+  "info": {
+    "displayName": "Rich Content(Markdown)",
+    "icon": "feather"
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultMarkdown"
+      }
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_rich_content_lists",
+  "info": {
+    "displayName": "Rich Content List",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "summary": {
+      "type": "text"
+    },
+    "rich_content": {
+      "type": "component",
+      "component": "shared.rich-content",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

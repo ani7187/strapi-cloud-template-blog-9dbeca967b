@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_business_requests",
+  "info": {
+    "singularName": "about-business-request",
+    "pluralName": "about-business-requests",
+    "displayName": "About business request"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page": {
+      "type": "string",
+      "required": true
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "position_role": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}

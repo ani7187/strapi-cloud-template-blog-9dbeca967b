@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_extended_sections_voices",
+  "info": {
+    "displayName": "Voices",
+    "icon": "microphone"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "voice_items": {
+      "type": "component",
+      "component": "sub-sections.voice-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_a_meeting_requests",
+  "info": {
+    "singularName": "book-a-meeting-request",
+    "pluralName": "book-a-meeting-requests",
+    "displayName": "Book a meeting request"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "representative": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::person.person"
+    },
+    "market": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::market-insight.market-insight"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "solution": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::solution.solution"
+    },
+    "has_gaming_license": {
+      "type": "boolean",
+      "default": false
+    },
+    "has_existing_operation": {
+      "type": "boolean",
+      "default": false
+    },
+    "full_name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "company": {
+      "type": "string",
+      "required": true
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "agree_data_processing": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  }
+}

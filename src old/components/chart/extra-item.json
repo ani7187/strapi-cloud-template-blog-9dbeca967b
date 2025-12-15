@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_chart_extra_items",
+  "info": {
+    "displayName": "Extra item",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

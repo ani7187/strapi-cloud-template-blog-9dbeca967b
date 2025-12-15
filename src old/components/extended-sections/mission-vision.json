@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_extended_sections_mission_visions",
+  "info": {
+    "displayName": "Mission vision",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "summary": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "component": "shared.item",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

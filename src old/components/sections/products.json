@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_products",
+  "info": {
+    "displayName": "Home Products",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "products": {
+      "type": "component",
+      "component": "sub-sections.product",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

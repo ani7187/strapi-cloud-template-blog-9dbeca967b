@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_extended_sections_item_with_btns",
+  "info": {
+    "displayName": "Item with btn",
+    "icon": "cast"
+  },
+  "options": {},
+  "attributes": {
+    "listing_title": {
+      "type": "string"
+    },
+    "listing_summary": {
+      "type": "text"
+    },
+    "listing_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "buttons": {
+      "type": "component",
+      "component": "shared.link-btn",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

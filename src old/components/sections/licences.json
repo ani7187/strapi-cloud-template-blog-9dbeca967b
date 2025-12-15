@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_licences",
+  "info": {
+    "displayName": "Licences",
+    "icon": "slideshow"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "license_and_certifications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::license-and-certification.license-and-certification"
+    }
+  },
+  "config": {}
+}

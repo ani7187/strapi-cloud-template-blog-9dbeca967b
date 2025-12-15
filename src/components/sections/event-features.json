@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_event_features",
+  "info": {
+    "displayName": "Reports"
+  },
+  "options": {},
+  "attributes": {
+    "anchor_link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "summary": {
+      "type": "text"
+    },
+    "reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::report.report"
+    }
+  },
+  "config": {}
+}
