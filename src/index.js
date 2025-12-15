@@ -21,6 +21,9 @@ module.exports = {
    * run jobs, or perform some special logic.
    */
   async bootstrap({ strapi }) {
+    strapi.server.httpServer.on('listening', async () => {
+      await migrateMedia({ strapi });
+    });
     /* await bootstrap();
     try {
         await diagnose();
@@ -28,7 +31,6 @@ module.exports = {
         strapi.log.error('S3 Diagnostic failed:', error);
     } */
    
-    await migrateMedia({ strapi });
   },
 
 };

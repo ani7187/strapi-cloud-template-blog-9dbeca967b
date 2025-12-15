@@ -17,14 +17,16 @@ async function migrateMedia({ strapi }) {
         provider: {
           $ne: 'aws-s3', // optimization: skip if already marked as aws-s3 (though URL check should suffice)
         },
-        name: {
-          $eq: 'coffee-beans.jpg', // optimization: skip if already marked as aws-s3 (though URL check should suffice)
-        },
+        // name: {
+        //   $eq: 'symbol_of_Armenia.png', // optimization: skip if already marked as aws-s3 (though URL check should suffice)
+        // },
       },
-      start: 1,
-      limit: 10, // Process in batches if you have massive amounts, but 10k is a reasonable start
+      // start: 3,
+      // limit: 1, // Process in batches if you have massive amounts, but 10k is a reasonable start
     });
 
+    console.log(filesToMigrate);
+    
     console.log(`Found ${filesToMigrate.length} files to migrate.`);
 
     if (filesToMigrate.length === 0) {
