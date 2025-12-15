@@ -11,9 +11,6 @@
     },
     "body": {
       "type": "text"
-    },
-    "anchor_link": {
-      "type": "string"
     }
   }
 }
